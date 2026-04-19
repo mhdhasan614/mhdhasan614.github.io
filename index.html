@@ -1,31 +1,85 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Hasan-ஓட Website</title>
+    <title>Hasan - Web Developer</title>
     <style>
         body {
-            background-color: #3498db;
-            font-family: Arial;
-            text-align: center;
-            padding-top: 50px;
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             color: white;
+            text-align: center;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .card {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.18);
+            max-width: 400px;
+        }
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        h2 {
+            color: #ffd700;
+            margin-top: 30px;
+        }
+        p {
+            font-size: 1.1em;
+            line-height: 1.6;
         }
         button {
-            padding: 10px 20px;
-            font-size: 16px;
-            background-color: white;
-            color: #3498db;
+            margin-top: 20px;
+            padding: 12px 30px;
+            font-size: 18px;
+            font-weight: bold;
+            background: #ffd700;
+            color: #333;
             border: none;
-            border-radius: 5px;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+        button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.4);
+            background: #ffed4e;
+        }
+        .skill {
+            background: rgba(0,0,0,0.2);
+            padding: 8px 15px;
+            border-radius: 20px;
+            margin: 5px;
+            display: inline-block;
         }
     </style>
 </head>
 <body>
-    <h1>வணக்கம், நான் Hasan</h1>
-    <p>நான் Buttala-ல இருந்து website கத்துக்கிட்டு இருக்கேன்.</p>
-    <h2>என் திறமை:</h2>
-    <p>1. HTML கத்துக்கிட்டு இருக்கேன்</p>
-    <p>2. அடுத்து CSS கத்துப்பேன்</p>
-    <button>என்னை தொடர்பு கொள்ள</button>
+    <div class="card">
+        <h1>வணக்கம், நான் Hasan 👋</h1>
+        <p>நான் Buttala-ல இருந்து Website கத்துக்கிட்டு இருக்கேன்.</p>
+        
+        <h2>என் திறமை:</h2>
+        <div>
+            <span class="skill">HTML</span>
+            <span class="skill">CSS</span>
+            <span class="skill">GitHub</span>
+        </div>
+        <p>அடுத்து JavaScript கத்துப்பேன் 🚀</p>
+        
+        <button onclick="alert('என்னை தொடர்பு கொள்ள: hasan@example.com')">
+            என்னை தொடர்பு கொள்ள
+        </button>
+    </div>
 </body>
-</html>
+    </html>
+            
